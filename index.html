@@ -85,7 +85,7 @@
 
     <section id="booking">
       <h2>Забронировать</h2>
-      <form autocomplete="off" id="my-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+      <form name="booking" id="my-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
         <fieldset>
           <label>
             <input type="checkbox" name="hall" value="80` vibes">80` vibes
@@ -148,31 +148,25 @@
 
         <fieldset>
           <legend>Выбери дату и время</legend>
-          <label>
-            <input type="date" name="date" required>Дата*
-          </label>
-          <label>
-            <input type="time" name="time" required>Время*
-          </label>
-          <label>
-            <input type="number" name="persons" required>Количество человек*
-          </label>
-          <label>
-            <input type="text" name="name" required>Имя*
-          </label>
-          <label>
-            <input type="text" name="surname" required>Фамилия*
-          </label>
-          <label>
-            <input type="tel" name="phone" required title="+7__________"
-              pattern="^\+?[7-8]?[0-9]{3}?[0-9]{3}?[0-9]{2}?[0-9]{2}$">Номер телефона*
-          </label>
+          <label for="date">Дата*</label>
+          <input type="date" name="date" required id="date">
+          <label for="time">Время*</label>
+          <input type="time" name="time" required id="time">
+          <label for="persons">Количество человек*</label>
+          <input type="number" name="persons" required id="persons">
+          <label for="name">Имя*</label>
+          <input type="text" name="name" required id="name">
+          <label for="surname">Фамилия*</label>
+          <input type="text" name="surname" required id="surname">
+          <label for="telephone">Номер телефона*</label>
+          <input type="tel" name="telephone" required title="+7__________"
+            pattern="^\+?[7-8]?[0-9]{3}?[0-9]{3}?[0-9]{2}?[0-9]{2}$" id="telephone">
           <label>
             <input type="checkbox" required>Я старше 18 лет
           </label>
         </fieldset>
 
-        <button type="submit" formtarget="_blank">Забронировать</button>
+        <button type="submit">Забронировать</button>
         <label>
           <input type="checkbox" required>Согласен на обработку данных
         </label>
