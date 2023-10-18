@@ -155,9 +155,16 @@
           <label for="time">Время*</label>
           <input type="time" name="time" required id="time">
         </div>
-          <label for="persons">Количество человек*</label>
-          <input type="number" name="persons" required id="persons">
+          <input name="persons" type="text" list="numbers" required placeholder="Сколько человек">
+          <datalist id="numbers">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+          </datalist>
         </div>
+
         <div>
           <label for="name">Имя*</label>
           <input type="text" name="name" required id="name">
@@ -177,8 +184,8 @@
     </section>
 
     <section id="about">
-      <div>
       <h2>О нас</h2>
+      <div>
       <p>Для наших гостей мы создали
         <em>концептуально новое игровое пространство виртуальной реальности</em>
         в центральной части города.
